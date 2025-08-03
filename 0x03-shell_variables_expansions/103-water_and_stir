@@ -1,2 +1,2 @@
 #!/bin/bash
-mapfile -t w <<< "${WATER//?/x}"; mapfile -t s <<< "${STIR//?/x}"; mapfile -t b <<< "${BESTCHOL//?/x}"; printf %s $(for ((sum=${#w[@]}+${#s[@]}; sum>0; sum/=${#b[@]})); do printf \\$(printf '%03o' $((sum%${#b[@]}+97))); done | tac)
+echo $((WATER + STIR)) | bc
