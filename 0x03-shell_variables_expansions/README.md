@@ -19,3 +19,7 @@ Second line: alias ls="rm *" - Creates an alias where typing ls will actually ru
 # echo $PATH | tr ':' '\n' | grep -c ""
  This script counts the number of directories in the PATH environment variable.
  It uses `tr` to replace colons with newlines and `grep -c` to count the lines.
+
+
+# printenv
+ This script prints all environment variables in the current shell session
