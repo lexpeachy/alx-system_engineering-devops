@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((WATER + STIR)) | bc
+echo $(($((${#WATER}#$WATER)) + $((${#STIR}#$STIR))))
