@@ -1,0 +1,2 @@
+#!/bin/bash
+printf %s\\n $(echo "obase=${#BESTCHOL};ibase=${#WATER};${#WATER}+ibase=${#STIR};${#STIR}" | bc) | tr '0-9' 'a-j'

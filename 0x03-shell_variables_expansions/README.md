@@ -70,3 +70,40 @@ This script calculates the exponentiation of BREATH raised to the power of LOVE.
 # printf "%.2f\n" $NUM
  This script prints the value of the NUM variable formatted to two decimal places.
  Usage: Set the NUM variable before running the script, e.g., NUM=3.14159 ./13-print_float
+
+# printf "%x\n" $DECIMAL
+
+ This script converts a decimal number to its hexadecimal representation.
+ Usage: Run the script with a decimal number as an argument.
+ Example: ./decimal_to_hexadecimal.sh 255
+ Output: ff
+ The script uses printf with the %x format specifier to convert the decimal number to hexadecimal.
+ The output will be in lowercase hexadecimal format.
+
+
+# tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+ This script performs a ROT13 transformation on the input text.
+ It uses the `tr` command to replace each letter with its ROT13 counterpart.
+ Usage: echo "text" | ./101-rot13
+ Example: echo "Hello, World!" | ./101-rot13
+ Output: Uryyb, Jbeyq!
+ The script reads from standard input and outputs the transformed text.
+ It can be used to encode or decode messages using the ROT13 cipher.
+
+# awk 'NR%2'
+
+ This script prints all odd lines from the input.
+ It uses the `awk` command to filter lines based on their line number.
+ Usage: cat file.txt | ./102-odd
+ Example: echo -e "Line 1\nLine 2\nLine 3"
+ Output: Line 1
+ The script reads from standard input and outputs the odd-numbered lines.
+ It can be useful for processing text files or command output where you want to extract specific lines.
+
+
+ # #printf %s\\n $(echo "obase=${#BESTCHOL};ibase=${#WATER};${#WATER}+ibase=${#STIR};${#STIR}" | bc) | tr '0-9' 'a-j'
+ This script calculates the sum of the lengths of the words "WATER" and "STIR" in a base defined by the length of the word "BESTCHOL", and outputs the
+ result in a format where digits are represented by letters a-j.
+ It uses the `bc` command for arithmetic operations and `tr` to convert digits to letters.
+ Usage: Run the script in a terminal to see the output.
