@@ -248,6 +248,4 @@ This comprehensive README:
 4. Highlights key architectural decisions
 5. Offers practical implementation guidance
 
-To use this README:
-1. View the diagrams using any Mermaid-compatible viewer
-2. copy and paste the diagram  code here to view the diagram  https://mermaid.live/ or any other that you prefer👌✌️
+👌✌️
